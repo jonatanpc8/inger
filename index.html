@@ -294,7 +294,7 @@ $$('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>$('#mobileMenu').
 $$('.filter').forEach(btn=>btn.addEventListener('click',()=>{
  $$('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
  const f=btn.dataset.filter;
- $$('.service').forEach(card=>{const cat=card.dataset.cat;card.style.display=(f==='all'||cat===f||cat==='all')?'flex':'none';});
+ $$('.service').forEach(card=>{const cat=card.dataset.cat;card.style.display=(f==='all'||cat===f)?'flex':'none';});
 }));
 const diag={
  planta:['La planta eléctrica no arranca','Batería descargada, filtros obstruidos, combustible en malas condiciones o fallas en el sistema de arranque y control.','Realizar revisión del sistema de arranque, combustible, filtros, aceite y transferencia antes de poner nuevamente el equipo en servicio.'],
